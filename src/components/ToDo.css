@@ -1,0 +1,55 @@
+.todo_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .todo_item:last-child {
+    border-bottom: none;
+  }
+  
+  .todo_item input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .todo_item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo_item .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .todo_item .actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo_item .actions button.save {
+    background-color: #28a745;
+  }
+  
+  .todo_item .actions button.edit {
+    background-color: #ffc107;
+  }
+  
+  .todo_item .actions button.delete {
+    background-color: #dc3545;
+  }
+  
+  .todo_item .actions button:hover {
+    opacity: 0.8;
+  }
+  
